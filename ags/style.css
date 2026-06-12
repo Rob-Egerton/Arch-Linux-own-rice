@@ -1,0 +1,167 @@
+/* ============================================= */
+/* === AJUSTES DE TAMAÑO (cambia aquí fácil) === */
+/* ============================================= */
+window#reproductor, window#equalizer {
+    background-color: transparent;
+}
+
+.contenedor-principal {
+    background-color: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 12px;
+
+    /* ←←← CAMBIA ESTOS VALORES SI QUIERES MÁS PEQUEÑO O GRANDE */
+    min-width: 240px;     /* ancho total de las dos ventanas */
+    min-height: 80px;    /* alto total (165px es el tamaño compacto que tenías en la screenshot) */
+}
+
+.album-art {
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+/* EL PUNTITO VERDE MAC */
+.boton-eq {
+    background-color: #28c941;
+    background-image: none;
+    border-radius: 100%;
+    min-width: 12px;
+    min-height: 12px;
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 4px;
+    border: none;
+    box-shadow: none;
+}
+
+.controles-derecha {
+    margin-top: -2px;
+}
+
+.controles-media {
+	margin-top: -6px;
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+.btn-control {
+    background: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 2px;
+    padding: 0px 2px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.btn-control:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* BARRA DE PROGRESO (ahora coincide con el ancho de CAVA) */
+.barra-progreso {
+	min-height: 4px;
+    margin-top: -6px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 5px;
+    min-width: 80px;     /* ← mismo ancho visual que CAVA (cámbialo si quieres más estrecho o ancho) */
+}
+
+scale {
+    outline: none;
+}
+
+scale trough {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 6px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+}
+
+scale highlight {
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+}
+
+scale slider {
+    min-width: 0px;
+    min-height: 0px;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    opacity: 0;
+    color: transparent;
+}
+
+/* CAVA */
+.barra-cava {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: -6px;
+    min-height: 12px;
+    padding-bottom: 0px;
+    font-family: monospace;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* ====================== EQUALIZADOR ====================== */
+.titulo-eq {
+    font-family: "Minecraft", monospace;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.grupo-barras {
+    padding: 6px 0;
+}
+
+.barra-vertical-eq trough {
+    min-width: 12px;
+    min-height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+
+.barra-vertical-eq highlight {
+    background-color: #28c941;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+
+.barra-vertical-eq slider {
+    min-width: 0px;
+    min-height: 0px;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    opacity: 0;
+}
+
+.frecuencias-eq {
+    margin-top: 6px;
+}
+
+.frecuencias-eq label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: monospace;
+}

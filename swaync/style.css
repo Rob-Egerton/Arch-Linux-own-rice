@@ -1,0 +1,57 @@
+/* SwayNC - Estilo Nothing/Apple 
+   Rice by Robert 
+*/
+
+* {
+    font-family: "Geist Mono", "Inter", "sans-serif";
+}
+
+.notification-row {
+    outline: none;
+    /* Ajusta el 30px de los lados para hacerla más ancha o flaca */
+    margin: 5px 18px; 
+}
+
+.notification {
+    background: rgba(20, 20, 20, 0.5); /* Glassmorphism */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 14px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* El tamaño del icono (Kingston y otros) */
+.notification-default-icon image,
+.notification-app-icon image {
+    -gtk-icon-size: 20px;
+    margin-right: 14px;
+    border-radius: 10px;
+}
+
+/* Título de la notificación */
+.summary {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Descripción de la notificación */
+.body {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2px;
+}
+
+/* Botón de cerrar (el tachecito) */
+.close-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-shadow: none;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.close-button:hover {
+    background: rgba(255, 50, 50, 0.6);
+}

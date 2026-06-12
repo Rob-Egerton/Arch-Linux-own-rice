@@ -1,0 +1,27 @@
+/* Seleccionamos la ventana raíz del calendario */
+window#gsimplecal {
+    background-color: #1e1e2e; /* Color oscuro (Catppuccin/Lolbit style) */
+    color: #cdd6f4;
+    border: 2px solid #fab387; /* El naranja de Lolbit */
+    border-radius: 12px;
+}
+
+/* Forzamos el color del widget del calendario */
+window#gsimplecal calendar {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border: none;
+}
+
+/* Cambiamos los números seleccionados (hoy) */
+window#gsimplecal calendar:selected {
+    background-color: #fab387;
+    color: #1e1e2e;
+}
+
+/* Quitamos el fondo blanco de los botones de flecha */
+window#gsimplecal button {
+    background-image: none;
+    background-color: transparent;
+    color: #fab387;
+}

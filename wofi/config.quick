@@ -1,0 +1,9 @@
+location=top_right
+yoffset=5
+xoffset=-20
+width=180
+height=210
+hide_search=true
+insensitive=true
+show=dmenu
+always_parse_args=true

@@ -1,0 +1,50 @@
+* {
+    font-family: "Minecraft", "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    /* Efecto Liquid: Blanco ultra-transparente */
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para cada "pastilla" de cristal */
+#workspaces, #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-music, #tray, #custom-michi_player {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 2px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid #ffffff;
+}
+
+
+#custom-power {
+    color: #ff4444; /* Un toque rojo Nothing para el apagado */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* --- MAGIA PARA EL LOGO DEL MICHI --- */
+#custom-michi_player {
+    background-image: url("/home/robert/Ares/config/compositores/waybar/icons/cat-icon.png");
+    background-size: 80px; /* Forzamos el tamaño exacto del michi */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent; 
+    
+    /* Aquí está el truco: empujamos las paredes para que el michi quepa */
+    padding-left: 25px;  
+    padding-right: 25px; 
+    font-size: 18px; /* Engañamos a la pastilla para que sea más alta */
+}

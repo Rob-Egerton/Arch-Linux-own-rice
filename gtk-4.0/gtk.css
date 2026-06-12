@@ -1,0 +1,28 @@
+/* --- Estética para EasyEffects (Versión Unificada) --- */
+
+scale trough {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0px; /* Cuadrado tipo Minecraft */
+    min-height: 8px;
+}
+
+scale highlight {
+    background-color: #28c941; /* El verde exacto de tu reproductor */
+    border-radius: 0px;
+}
+
+scale slider {
+    background-color: #ffffff;
+    border: 2px solid #28c941;
+    border-radius: 0px;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+button.suggested-action {
+    background-color: #28c941;
+    color: white;
+    border-radius: 10px;
+    font-family: "Minecraft", sans-serif;
+}

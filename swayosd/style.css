@@ -1,0 +1,41 @@
+window#osd {
+    background: transparent;
+}
+
+#container {
+    background: rgba(15, 15, 15, 0.85);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+}
+
+image {
+    color: #ffffff;
+    
+    transform: scale(0.5);
+    
+    margin-right: 2px;
+}
+
+/* RESETEO DE INGENIERO: Quitamos todos los márgenes fantasma */
+progressbar, trough, progress {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* LA BARRA (Carril) */
+trough {
+    min-height: 3.5px;
+    min-width: 140px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* EL PROGRESO (Blanco) */
+progress {
+    min-height: 3.5px;
+    border-radius: 10px;
+    background: #ffffff;
+}
