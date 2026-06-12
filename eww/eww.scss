@@ -1,0 +1,59 @@
+window {
+  background-color: transparent;
+}
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", "Monocraft Nerd Font", sans-serif;
+}
+
+/* ================================================== */
+/* CALENDARIO */
+/* ================================================== */
+.calendar-container {
+  border-radius: 24px;
+  background-color: rgba(25, 25, 25, 0.75);
+  padding: 15px;
+}
+
+.cal {
+  color: #cccccc;
+}
+
+.cal.header {
+  color: #888888;
+  font-weight: bold;
+}
+
+.cal:selected {
+  color: #111111;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+}
+
+.cal.highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ================================================== */
+/* MENU REPRODUCTOR MICHI */
+/* ================================================== */
+.michi-container {
+  border-radius: 24px;
+  background-color: rgba(25, 25, 25, 0.75);
+  padding: 15px;
+}
+
+.michi-btn {
+  padding: 12px;
+  border-radius: 12px;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.michi-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
