@@ -1,0 +1,54 @@
+;; ==================================================
+;; ESTRUCTURA DEL CALENDARIO 
+;; ==================================================
+(defwidget calendar_widget []
+    (box :class "calendar-container"
+         (calendar :class "cal")
+    )
+)
+
+;; ==================================================
+;; DEFINICIÓN DE LA VENTANA FLOTANTE
+;; ==================================================
+(defwindow calendar
+    :monitor 0
+    :stacking "overlay"
+    :exclusive false
+    :geometry (geometry :anchor "top left"
+                        :x "15px"    
+                        :y "5px"     
+                        :width "300px") ;; <-- Aquí está la magia del espaciado
+    (calendar_widget)
+)
+
+;; ==================================================
+;; MENÚ REPRODUCTOR MICHI
+;; ==================================================
+(defwidget michi_menu_widget []
+    (box :class "michi-container"
+         :orientation "v"
+         :spacing 10
+         :space-evenly false
+		 (eventbox :class "michi-btn" 
+                   :cursor "pointer" 
+                   :onclick "bash ~/.config/waybar/scripts/michi_player.sh archivo &"
+             (label :text "🎵 Abrir archivo(s)...")
+         )
+         (eventbox :class "michi-btn" 
+                   :cursor "pointer" 
+                   :onclick "bash ~/.config/waybar/scripts/michi_player.sh directorio &"
+             (label :text "📂 Abrir directorio...")
+         )
+    )
+)
+
+(defwindow michi_menu
+    :monitor 0
+    :stacking "overlay"
+    :exclusive false
+    :geometry (geometry :anchor "top left"
+                        :x "80px"  ;; <-- Ajusta esto para que quede debajo del logo del michi en tu barra
+                        :y "5px"
+                        :width "240px")
+    (michi_menu_widget)
+)
